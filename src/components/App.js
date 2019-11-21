@@ -4,9 +4,11 @@ import Presentation from './Presentation';
 
 function App() {
   return (
-    <div className="container">
+    <div>
       <Header></Header>
-      <Presentation></Presentation>
+      <div className="container">
+        <Presentation></Presentation>
+      </div>
     </div>
   );
 }
