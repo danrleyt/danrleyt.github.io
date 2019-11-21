@@ -20,29 +20,34 @@ class Header extends React.Component {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item active">
+            <li className="nav-item ">
               <a className="nav-link" href="#">
-                Home <span className="sr-only">(current)</span>
+                Home
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Features
+                Experience
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Pricing
+                Education
               </a>
             </li>
             <li className="nav-item">
-              <a
-                className="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-              >
-                Disabled
+              <a className="nav-link" href="#">
+                Skills
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Interests
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Awards
               </a>
             </li>
           </ul>
