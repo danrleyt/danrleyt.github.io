@@ -1,0 +1,17 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ff00;
+  background-color: black;
+}
+
+.text-title {
+  text-align: center;
+}
+
+.text-desc {
+  text-align: justify;
+}
+
+.container {
+  padding-top: 75px;
+}
