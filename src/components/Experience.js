@@ -5,31 +5,84 @@ const Experience = () => (
     <div className="row justify-content-center">
       <h1>Experience</h1>
       <section>
-        IT ANALYST, DATAPREV, FORTALEZA, BRAZIL Building and maintaining
-        information systems that are used by federal institutions and also by
-        the brazilian population such as the application <a>MEU INSS</a> that
-        has more than 10 million users.
+        <p>
+          <b>ENGINEERING MANAGER</b> - commercetools GmbH | Berlin/Remote | 2021
+          – Present
+        </p>
+        <ul>
+          <li>
+            Leading technical decisions with focus on optimisation, consulting,
+            when needed, the tech leaders of the company.
+          </li>
+          <li>
+            Identifying pain points of the system from a technical perspective
+            through technical discussions with the team.
+          </li>
+          <li>
+            Managing a cross-functional team of 6 engineers, handling day-to-day
+            problems, 1:1s, leveling.
+          </li>
+        </ul>
       </section>
       <section>
-        FULL STACK DEVELOPER, INSTITUTO ATLÂNTICO, FORTALEZA, BRAZIL Building
-        whole applications in an agile environment, from server side to
-        frontend. Architecting software considering the client needs, making
-        day-to-day decisions along with the team to build highly scalable
-        systems, from performance to user experience. Developed the first
-        version of HP Mobile Fax.
+        <p>
+          <b>BACKEND ENGINEER</b> - commercetools GmbH| Berlin/Remote | 2020 –
+          2021
+        </p>
+        <ul>
+          <li>Rewriting an entire microservice from Java to Typescript.</li>
+          <li>
+            Containerisation of services and Kubernetes HPA creations, enabling
+            the gateway service to autoscale and handle more requests.
+          </li>
+          <li>
+            Reducing latency of requests by 25% by reducing code complexity,
+            compressing requests and establishing schemas.
+          </li>
+        </ul>
       </section>
       <section>
-        SOFTWARE ENGINEER, HEAVYCONNECT, SALINAS, CALIFORNIA Working as a
-        Fullstack developer for an american startup in the agtech business.
-        Developing an hybrid app using Ionic Framework, along with a webapp
-        developed using Angular, and a Backend using DJango. Also responsible
-        for the automation of the company on client support.
+        <p>
+          <b>SOFTWARE ENGINEER</b> - DATAPREV | Brazil | 2018 – 2019
+        </p>
+        <ul>
+          <li>
+            Establishing communication between services, defining the queues for
+            the microservices communication via messages.
+          </li>
+          <li>
+            Migration of technologies, e.g JSF to React with Java Spring on the
+            backend. Making it possible to scale the application for more than 2
+            million users.
+          </li>
+        </ul>
       </section>
       <section>
-        FULL STACK DEVELOPER, NUCLEUS OF PRACTICES IN COMPUTER SCIENCE, QUIXADÁ,
-        BRAZIL Hybrid Developer using Ionic Framework and MEAN (MongoDB,
-        Express, AngularJS, NodeJS) Responsible for the first version of the app
-        for events participation Joyn.
+        <p>
+          <b>SOFTWARE ENGINEER</b> - Instituto Atlantico | Brazil | 2018 – 2018
+        </p>
+        <ul>
+          <li>
+            Designing and implementing a multi-platform application from
+            scratch.
+          </li>
+          <li>
+            Working alongside HP engineers to port the application to the HP
+            Smart.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <p>
+          <b>SOFTWARE ENGINEER</b> - HeavyConnect Inc. | Remote | 2017 – 2018
+        </p>
+        <ul>
+          <li>Adding/building features from the backend to the frontend.</li>
+          <li>
+            Working closely with customers to understand their needs and gather
+            requirements.
+          </li>
+        </ul>
       </section>
     </div>
   </div>
