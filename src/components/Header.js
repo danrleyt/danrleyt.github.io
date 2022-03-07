@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Header = () => (
   <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -56,6 +56,6 @@ const Header = () => (
       </ul>
     </div>
   </nav>
-);
+)
 
-export default Header;
+export default Header

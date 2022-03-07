@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Experience = () => (
   <div className="container">
@@ -33,6 +33,6 @@ const Experience = () => (
       </section>
     </div>
   </div>
-);
+)
 
-export default Experience;
+export default Experience

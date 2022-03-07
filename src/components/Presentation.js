@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Presentation = () => (
   <div className="container">
@@ -37,6 +37,6 @@ const Presentation = () => (
       </div>
     </div>
   </div>
-);
+)
 
-export default Presentation;
+export default Presentation
