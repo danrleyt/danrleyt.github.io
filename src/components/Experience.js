@@ -6,8 +6,13 @@ const Experience = () => (
       <h1>Experience</h1>
       <section>
         <p>
-          <b>ENGINEERING MANAGER</b> - commercetools GmbH | Berlin/Remote | 2021
-          – Present
+          <b>SENIOR SOFTWARE ENGINEER</b> - Just Eat Takeaway.com | Berlin | 2023 – Present
+        </p>
+      </section>
+      <section>
+        <p>
+          <b>ENGINEERING MANAGER</b> - commercetools GmbH | Berlin | 2021
+          – 2023 
         </p>
         <ul>
           <li>
