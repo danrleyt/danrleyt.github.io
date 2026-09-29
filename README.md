@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# danrleyt.github.io
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Source for my personal website, **https://danteixeira.me** (https://danrleyt.github.io redirects there).
 
-## Available Scripts
+It's a single terminal-style page built with React 19 and Vite. The colours follow the
+[vscode.nvim](https://github.com/Mofiqul/vscode.nvim) palette (VS Code Dark+ / Light+) I use in Neovim.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Dark and light themes that follow the system setting, with a `[theme]` toggle that remembers the choice
+- Hero with an `ssh` prompt and a typewriter that cycles through short "commands"
+- Sections: about (with a collapsible career `git log`), work experience, education, projects, skills
+- Command palette: press `/` (or click `[/]`) to jump to a section or open a link
+- Sticky nav that highlights the current section, a scroll progress bar, and a responsive mobile menu
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Development
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Requires Node `^20.19` or `>=22.12`.
 
-### `npm test`
+```sh
+npm install
+npm start          # dev server at http://localhost:5173
+npm run build      # production build into ./build
+npm run preview    # serve the production build locally
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deployment
 
-### `npm run build`
+```sh
+npm run deploy     # builds, then publishes ./build to the gh-pages branch
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+GitHub Pages serves the site from the `gh-pages` branch. `public/CNAME` holds the custom domain
+(`danteixeira.me`); it's copied into every build so a deploy never wipes the domain setting. GitHub
+redirects `danrleyt.github.io` to the custom domain.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Editing content
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| What | Where |
+| --- | --- |
+| Social links, nav/palette sections, typewriter lines, career start date | `src/content.js` |
+| About text and career `git log` | `src/components/About.jsx` |
+| Jobs | `src/components/Experience.jsx` |
+| Education | `src/components/Education.jsx` |
+| Projects | `src/components/Projects.jsx` |
+| Skills | `src/components/Skills.jsx` |
+| Colours, fonts, layout | `src/index.css` (theme tokens at the top) |
+| Page title, meta tags, font loading | `index.html` |
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To add a section, create a component, render it in `src/App.jsx`, and add an entry to `SECTIONS` in
+`src/content.js` so it appears in the nav and command palette.
