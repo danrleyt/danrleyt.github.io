@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import Nav from './components/Nav'
 import Presentation from './components/Presentation'
 import About from './components/About'
-import Projects from './components/Projects'
+import Playground from './components/Playground'
 import Experience from './components/Experience'
 import Education from './components/Education'
 import Skills from './components/Skills'
@@ -48,7 +48,7 @@ const App = () => {
         <About />
         <Experience />
         <Education />
-        <Projects />
+        <Playground />
         <Skills />
       </main>
       <Footer />

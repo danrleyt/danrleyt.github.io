@@ -12,8 +12,9 @@ const RECENT = [
         bullets: [
           'Cutting the time from courier clock-on to first delivery by 20%, by introducing geo-restricted clock-on backed by geospatial indexes in MongoDB.',
           'Owning courier-facing services that process hundreds of thousands of orders a day across all markets, on AWS and Kubernetes.',
-          'Designing the event-driven flows over Kafka that carry courier state, location and order-lifecycle events between services.',
           'Introducing an RFC process, code review standards and shared architectural patterns, adopted across three teams.',
+          'Mentoring engineers on the team.',
+          'Designing the event-driven flows over Kafka that carry courier state, location and order-lifecycle events between services.',
         ],
       },
     ],

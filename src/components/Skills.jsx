@@ -6,6 +6,10 @@ const SKILLS = [
   { key: 'platform', items: ['Kubernetes', 'HPA', 'Docker', 'Kafka'] },
   { key: 'databases', items: ['PostgreSQL', 'MongoDB', 'DynamoDB'] },
   {
+    key: 'leadership',
+    items: ['Technical leadership', 'System design & RFCs', 'Architecture & code review', 'Mentoring', 'Incident response'],
+  },
+  {
     key: 'interests',
     items: [
       'Microservices',
