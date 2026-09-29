@@ -46,6 +46,7 @@ redirects `danrleyt.github.io` to the custom domain.
 | Skills | `src/components/Skills.jsx` |
 | Colours, fonts, layout | `src/index.css` (theme tokens at the top) |
 | Page title, meta tags, font loading | `index.html` |
+| Analytics (GoatCounter code, tracked link events) | `src/analytics.js` |
 
 To add a section, create a component, render it in `src/App.jsx`, and add an entry to `SECTIONS` in
 `src/content.js` so it appears in the nav and command palette.

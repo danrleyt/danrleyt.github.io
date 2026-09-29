@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { LINKS, SECTIONS } from '../content'
+import { trackLink } from '../analytics'
 
 const ITEMS = [
   ...SECTIONS.map((s) => ({ key: '#', label: s.label, href: `#${s.id}` })),
@@ -10,8 +11,10 @@ const go = (item) => {
   if (item.href.startsWith('#')) {
     document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' })
   } else if (item.href.startsWith('mailto:')) {
+    trackLink(item.href)
     window.location.href = item.href
   } else {
+    trackLink(item.href)
     window.open(item.href, '_blank', 'noopener')
   }
 }
