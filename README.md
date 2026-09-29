@@ -9,7 +9,7 @@ It's a single terminal-style page built with React 19 and Vite. The colours foll
 
 - Dark and light themes that follow the system setting, with a `[theme]` toggle that remembers the choice
 - Hero with an `ssh` prompt and a typewriter that cycles through short "commands"
-- Sections: about (with a collapsible career `git log`), work experience, education, projects, skills
+- Sections: about (with a collapsible career `git log`), work experience, education, playground, skills
 - Command palette: press `/` (or click `[/]`) to jump to a section or open a link
 - Sticky nav that highlights the current section, a scroll progress bar, and a responsive mobile menu
 
@@ -42,7 +42,7 @@ redirects `danrleyt.github.io` to the custom domain.
 | About text and career `git log` | `src/components/About.jsx` |
 | Jobs | `src/components/Experience.jsx` |
 | Education | `src/components/Education.jsx` |
-| Projects | `src/components/Projects.jsx` |
+| Playground (side projects) | `src/components/Playground.jsx` |
 | Skills | `src/components/Skills.jsx` |
 | Colours, fonts, layout | `src/index.css` (theme tokens at the top) |
 | Page title, meta tags, font loading | `index.html` |

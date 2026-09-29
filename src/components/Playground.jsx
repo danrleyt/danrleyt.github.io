@@ -18,13 +18,13 @@ const PROJECTS = [
   },
 ]
 
-const Projects = () => (
-  <section id="projects">
-    <SectionHeading label="projects" />
+const Playground = () => (
+  <section id="playground">
+    <SectionHeading label="playground" />
     <div className="prompt">
       <span className="ps1">dan@portfolio:~$</span>
       <span className="cmd">ls</span>
-      <span className="arg">-l projects/</span>
+      <span className="arg">-l playground/</span>
     </div>
     {PROJECTS.map((p) => (
       <div className="project" key={p.name}>
@@ -55,4 +55,4 @@ const Projects = () => (
   </section>
 )
 
-export default Projects
+export default Playground

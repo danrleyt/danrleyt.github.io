@@ -12,7 +12,7 @@ export const SECTIONS = [
   { id: 'about', nav: 'about', label: 'about' },
   { id: 'experience', nav: 'work', label: 'work experience' },
   { id: 'education', nav: 'edu', label: 'education' },
-  { id: 'projects', nav: 'projects', label: 'projects' },
+  { id: 'playground', nav: 'playground', label: 'playground' },
   { id: 'skills', nav: 'skills', label: 'skills' },
 ]
 
@@ -21,7 +21,7 @@ export const CAREER_START = new Date(2017, 0, 1)
 
 // Commands cycled by the typewriter prompt in the hero.
 export const TYPED_CYCLES = [
-  { cmd: 'whoami', out: 'software engineer by heart, manager by experience' },
+  { cmd: 'whoami', out: 'engineer by heart; managed a team, chose to keep building' },
   {
     cmd: 'head -5 interests.txt',
     out: [
